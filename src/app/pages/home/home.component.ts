@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
     this.loadScript('../assets/js/jquery.js');
     this.loadScript('../assets/js/plugins.js');
     this.loadScript('../assets/js/functions.js');
-
+    this.loadScript('https://code.iconify.design/1/1.0.7/iconify.min.js');
   }
 
   public loadScript(url: string) {
