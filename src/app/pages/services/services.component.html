@@ -6,8 +6,11 @@
         <div class="header-inner">
             <div class="container">
                 <!--Logo-->
-                <div id="logo"> <a routerLink="/home"><span class="logo-default">POLO</span><span
-                            class="logo-dark">POLO</span></a> </div>
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.jpg" style="width: 12px;" class="logo-default">
+                    </a>
+                </div>
                 <!--End: Logo-->
                 <!--Header Extras-->
                 <app-language></app-language>
@@ -31,8 +34,8 @@
             <div class="container">
                 <div class="slide-captions text-center text-light">
                     <!-- Captions -->
-                    <span class="strong">Ce que nous faisons</span>
-                    <h1>Services</h1>
+                    <span class="strong">{{ 'service.what_we_do'|translate }}</span>
+                    <h1>{{ 'service.title'|translate }}</h1>
                     <!-- end: Captions -->
                 </div>
             </div>
@@ -44,7 +47,7 @@
     <section>
         <div class="container">
             <div class="heading-text heading-section text-center">
-                <h2>Ce que nous faisons</h2>
+                <h2>{{ 'service.what_we_do'|translate }}</h2>
             </div>
             <div class="row">
                 <div class="col-lg-4">
@@ -52,10 +55,8 @@
                         <div class="icon">
                             <a href="#"><i class="fa fa-users"></i></a>
                         </div>
-                        <h3>Marketing Relationnel</h3>
-                        <p>Identification des prospects/clients intéressé par un produit,
-                            Mise en oeuvre afin de comprendre ces préferences afin de pouvoir les convertir
-                            et les fidéliser.
+                        <h3>{{ 'service.service01'|translate }}</h3>
+                        <p>{{ 'service.service01_desc'|translate }}
                         </p>
                     </div>
                 </div>
@@ -64,8 +65,8 @@
                         <div class="icon">
                             <a href="#"><i class="fa fa-shopping-cart"></i></a>
                         </div>
-                        <h3>Commerce Général</h3>
-                        <p>Conglomérat de commerçants, et de prestateurs de services.</p>
+                        <h3>{{ 'service.service02'|translate }}</h3>
+                        <p>{{ 'service.service02_desc'|translate }}</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -73,8 +74,8 @@
                         <div class="icon">
                             <a href="#"><i class="fa fa-arrow-up"></i></a>
                         </div>
-                        <h3>Suivi Entrepreneurial </h3>
-                        <p>Gestions des commandes, Suivi des ventes, Communication, Marketing </p>
+                        <h3>{{ 'service.service03'|translate }} </h3>
+                        <p>{{ 'service.service03_desc'|translate }} </p>
                     </div>
                 </div>
             </div>
@@ -85,8 +86,8 @@
             <div class="row carousel-description-clients carousel-description-style ">
                 <div class="col-lg-4">
                     <div class="description">
-                        <h2>Nos Clients</h2> 
-                        Ils  ont décidés de nous faire confiance et s'affilier à nous.
+                        <h2>{{ 'partner.title'|translate }}</h2> 
+                        {{ 'partner.trust'|translate }}
                     </div>
                 </div>
                 <div class="col-lg-8">
@@ -109,10 +110,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <h3 class="text-light">Profitez de notre vaste réseaux de ventes</h3>
-                    <p class="text-light">Augmentez vos profits en adhérents au réseau AFRIZON.</p>
+                    <h3 class="text-light">{{ 'service.promotion'|translate }}</h3>
+                    <p class="text-light">{{ 'service.promotion_explain'|translate }}.</p>
                 </div>
-                <div class="col-lg-2"> <a routerLink="/contact" class="btn btn-light btn-outline">CONTACTEZ- NOUS!</a> </div>
+                <div class="col-lg-2"> <a routerLink="/contact" class="btn btn-light btn-outline">{{ 'service.contact_us'|translate }}</a> </div>
             </div>
         </div>
     </div>

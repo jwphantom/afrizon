@@ -4,6 +4,7 @@ import { Title } from '@angular/platform-browser';
 import { Subject } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import * as jquery from 'jquery';
 
 
 
@@ -20,10 +21,10 @@ export class ContactComponent implements OnInit {
   ) { }
 
   ngOnInit(){   
-    this.loadScript('../assets/plugins/gmap3/gmap3.min.js');
+    this.loadScript('../assets/plugins/gmap3/gmap.min.js');
     this.loadScript('../assets/plugins/gmap3/map-styles.js');
     this.title.setTitle("Afrizon - Contact");
-    this.loadScript('maps.googleapis.com/maps/api/js?key=AIzaSyBevK1XqJGMdutSDCTKaiyalg09asD6km8');
+    this.loadScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyBByIEHoI3npofmaqJpkZUNqSUp_ermqmQ');
 
     this.loadScript('../assets/js/jquery.js');
     this.loadScript('../assets/js/plugins.js');

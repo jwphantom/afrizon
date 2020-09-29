@@ -1260,13 +1260,13 @@ Topbar
   position: relative;
   z-index: 1;
   transition: all .4s ease-in-out;
-  height: 80px;
+  height: 60px;
 }
 #header .header-inner #logo a > img,
 #header #header-wrap #logo a > img {
   vertical-align: inherit;
   transition: all .4s ease-in-out;
-  height: 80px;
+  height: 70px;
   width: auto;
 }
 #header .header-inner #logo a > img,

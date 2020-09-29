@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
+import { LocaleService } from 'src/app/services/locale.service';
+
 
 @Component({
   selector: 'app-language',
@@ -7,9 +10,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LanguageComponent implements OnInit {
 
-  constructor() { }
+  lang : String;
 
-  ngOnInit(): void {
+
+  constructor(private translate: TranslateService,
+            private localeService : LocaleService){
+            }
+
+  ngOnInit() {
+    this.lang = this.localeService.lang
+  }
+
+  switchFr() {
+   this.localeService.switchFr();
+     this.translate.use("fr");
+    this.lang = "fr"
+
+    
+  }
+
+  switchEn() {
+    console.log()
+    this.localeService.switchEn();
+    this.translate.use("en");
+    
+    this.lang = "en"
+
   }
 
 }

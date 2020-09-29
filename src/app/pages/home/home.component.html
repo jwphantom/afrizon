@@ -2,13 +2,14 @@
 <div class="body-inner">
 
     <!-- Header -->
-    <header id="header" data-transparent="true" class="dark submenu-light">
+    <header id="header" data-fullwidth="true">
         <div class="header-inner">
             <div class="container">
                 <!--Logo-->
-                <div id="logo"> <a href="index.html">
-                        <span class="logo-default">Afrizon</span>
-                        <span class="logo-dark">Afrizon</span></a> 
+                <div id="logo">
+                    <a routerLink="/home">
+                        <img src="assets/images/logo.jpg" class="logo-default">
+                    </a>
                 </div>
                 <!--End: Logo-->
                 <!--Header Extras-->
@@ -34,9 +35,9 @@
             <div class="container">
                 <div class="slide-captions text-center text-light">
                     <!-- Captions -->
-                    <h1>BIENVENUE SUR AFRIZON</h1>
-                    <p>Le commerce général relationnel le plus révolutionnaire du 21e siècle .</p>
-                    <div><a routerLink="/about" class="btn scroll-to"> A propos</a></div>
+                    <h1>{{ 'home.s01_t'|translate }}</h1>
+                    <p>{{ 'home.s01_d'|translate }}</p>
+                    <div><a routerLink="/about" class="btn scroll-to">{{ 'about.title'|translate }}</a></div>
 
                     <!-- end: Captions -->
                 </div>
@@ -49,9 +50,9 @@
             <div class="container">
                 <div class="slide-captions text-center text-light">
                     <!-- Captions -->
-                    <h1>RESEAUX DE VENTE AFRICAIN</h1>
-                    <p class="text-small">Elargissez votre réseau de vente à travers l'afrique.</p>
-                    <div><a routerLink="/service" class="btn scroll-to"> Services </a></div>
+                    <h1>{{ 'home.s02_t'|translate }}</h1>
+                    <p class="text-small">{{ 'home.s02_d'|translate }}</p>
+                    <div><a routerLink="/service" class="btn scroll-to">{{ 'service.title'|translate }} </a></div>
                     <!-- end: Captions -->
                 </div>
             </div>
@@ -66,12 +67,10 @@
             <div class="row">
                 <div class="col-lg-5">
                     <h4 class="m-b-10">Description</h4>
-                    <h2 class="m-b-10">A propos d'Afrizon </h2>
-                    <p>Afrizon est une entreprise de commerce général africaine basée au cameroun offrant la possibilité 
-                        de mettre en relation individuelle, nominative, continue et personnalisée des producteurs ou professionnel
-                        directement avec des consommateurs
+                    <h2 class="m-b-10">{{ 'home.a_t'|translate }} </h2>
+                    <p>{{ 'home.a_d'|translate }}
                     </p>
-                    <a routerLink="/about" class="btn btn-dark"><span class="btn-label"><i class="fa fa-check"></i></span> A propos
+                    <a routerLink="/about" class="btn btn-dark"><span class="btn-label"><i class="fa fa-check"></i></span> {{ 'about.title'|translate }}
                         </a>
                 </div>
                 <div class="col-lg-6 offset-1 m-t-50">
@@ -89,8 +88,8 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-9r">
-                    <h3 class="text-light">Débutez l'aventure avec nous <span class="iconify" data-icon="emojione-v1:smiling-face-with-sunglasses" data-inline="false"></span> </h3>
-                    <a routerLink="/contact" class="btn btn-light btn-outline btn-rounded">Prise de rendez-vous</a>
+                    <h3 class="text-light">{{ 'home.start'|translate }} <span class="iconify" data-icon="emojione-v1:smiling-face-with-sunglasses" data-inline="false"></span> </h3>
+                    <a routerLink="/contact" class="btn btn-light btn-outline btn-rounded">{{ 'home.date'|translate }}</a>
                 </div>
             </div>
         </div>
@@ -101,8 +100,8 @@
     <section>
         <div class="container">
             <div class="heading-text heading-section text-center">
-                <h2>Pourquoi nous choisir?</h2>
-                <p>Notre priorité, la satisfaction du commerçant et du consommanteur.</p>
+                <h2>{{ 'home.skill'|translate }}</h2>
+                <p>{{ 'home.skill_d'|translate }}</p>
             </div>
             <div class="row">
                 <div class="col-lg-4">
@@ -110,8 +109,8 @@
                         <div class="icon">
                             <a href="#"><i class="far fa-lightbulb"></i></a>
                         </div>
-                        <h3>Grande Communauté</h3>
-                        <p>Base de clients acheteurs beaucoup plus importante que celle trouvée sur une autre plateforme africaine</p>
+                        <h3>{{ 'home.p01_title'|translate }}</h3>
+                        <p>{{ 'home.p01_desc'|translate }}</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -119,9 +118,8 @@
                         <div class="icon">
                             <a href="#"><i class="fa fa-trophy"></i></a>
                         </div>
-                        <h3>Moins de Travail</h3>
-                        <p>Lorsque vous vous associez avec AFRIZON, votre tâches la plus importante devient tout juste d'assurer la 
-                            Disponibilité du stock.</p>
+                        <h3>{{ 'home.p02_title'|translate }}</h3>
+                        <p>{{ 'home.p02_desc'|translate }}</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -129,8 +127,8 @@
                         <div class="icon">
                             <a href="#"><i class="fa fa-thumbs-up"></i></a>
                         </div>
-                        <h3>Une chance pour les PME</h3>
-                        <p>A la différence d'autres réseaux, chez Afrizon, même les pétits commerçants peuvent s'affilier au réseaux.</p>
+                        <h3>{{ 'home.p03_title'|translate }}</h3>
+                        <p>{{ 'home.p03_desc'|translate }}</p>
                     </div>
                 </div>
             </div>
