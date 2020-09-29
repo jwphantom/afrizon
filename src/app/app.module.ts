@@ -15,6 +15,10 @@ import { LanguageComponent } from './static/language/language.component';
 import { MenuComponent } from './static/menu/menu.component';
 import { ScrollTopComponent } from './static/scroll-top/scroll-top.component';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +37,10 @@ import { ScrollTopComponent } from './static/scroll-top/scroll-top.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
